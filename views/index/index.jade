@@ -1,0 +1,30 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
+  head
+    meta(name='Author', content='ippon digital')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi')
+    title Voter Dapp Example
+    link(href='/css/bootstrap.css', rel='stylesheet', type='text/css')
+    link(href='/css/bootstrap-theme.css', rel='stylesheet', type='text/css')
+    link(href='/css/index.css', rel='stylesheet', type='text/css')
+  body
+    .container
+        .col-md-4
+        .col-md-4
+          section.login-form
+            form(method='post', action='/', role='login')
+                h3 Voter Dapp - Create contract
+                if locals.pageData
+                    h4.red= pageData.response
+                p.
+                    This will generate the contract for the dapp.
+                p.
+                    Enter the wallet address you want to create the contract from. This will be used to fund the gas payment.
+                p.
+                    If you are using test-rpc, the contract wallet address is not returned when creating a contract for some reason, so check the logging on the test-rpc console to find what the contract address is.
+                br
+                input.form-control.input-lg(type='input', name='walletAddress', placeholder='enter wallet address', value='')
+                br
+                button.btn.btn-lg.btn-primary.btn-block(type='submit', name='create-contract') Create Contract
+        .col-md-4
