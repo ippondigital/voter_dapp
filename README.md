@@ -8,6 +8,12 @@ I am learning ETH contracts as I go so please bare with me if it isn't working c
 
 I have create this dapp with the use of testrpc on linux, I strongly suggest you use the same before giving it a go!
 
+Big Nod goes to this guy
+
+[https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2) 
+
+I read up on the basics and went from there
+
 Below are some notes to setting up test-rpc in linux. It took me a little while so I thought I would share it
 
 *************************************************************
