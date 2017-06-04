@@ -12,34 +12,34 @@ Below are some notes to setting up test-rpc in linux. It took me a little while 
 
 *************************************************************
 
-# Takes a clean Ubuntu image, up to being dev ready.
-# install npm from official repo, as apt-get has a very old version of npm
+### Takes a clean Ubuntu image, up to being dev ready.
+### install npm from official repo, as apt-get has a very old version of npm
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get update -y && sudo apt-get upgrade -y
 
-# install the basics
-sudo apt-get install -y build-essential python nodejs
+### install the basics
+`sudo apt-get install -y build-essential python nodejs`
 
-#NOTE some need sudo and web3 shouldnt be installed with sudo, it screws things up
+#### NOTE some need sudo and web3 shouldnt be installed with sudo, it screws things up
 
-# upgrade npm before install tools
-sudo npm install -g npm
+### upgrade npm before install tools
+`sudo npm install -g npm`
 
-#install web3 library for ethereum contracts
-npm install -g web3
+### install web3 library for ethereum contracts
+`npm install -g web3`
 
-#install solidity for npm
-sudo npm install -g solc
+### install solidity for npm
+`sudo npm install -g solc`
 
-#install testrpc
-npm install -g ethereumjs-testrpc
+### install testrpc
+`npm install -g ethereumjs-testrpc`
 
-# You also need web3 locally in the project.
+### You also need web3 locally in the project.
 
-#set up your project and then install web3 locally
-npm install web3
+### set up your project and then install web3 locally
+`npm install web3`
 
-#TEST-RPC
+### TEST-RPC
 
 run `tesrpc` in the console and you should see it start up and provide a list of accounts and private keys, use one of these accounts to test the dapp.
 
