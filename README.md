@@ -14,8 +14,8 @@ Below are some notes to setting up test-rpc in linux. It took me a little while 
 
 ### Takes a clean Ubuntu image, up to being dev ready.
 ### install npm from official repo, as apt-get has a very old version of npm
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get update -y && sudo apt-get upgrade -y
+`curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get update -y && sudo apt-get upgrade -y`
 
 ### install the basics
 `sudo apt-get install -y build-essential python nodejs`
