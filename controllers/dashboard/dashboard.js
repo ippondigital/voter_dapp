@@ -19,7 +19,7 @@ exports.show = function(req,res) {
          
     
     // Additionally you can start watching right away, by passing a callback:
-     
+     var transactions = '';
 // ****** not working yet so leaving empty
 // 
 //    var transactions = web3.eth.filter(
